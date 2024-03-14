@@ -2,7 +2,7 @@
  *  Import react, react native & expo modules
  */
 import React from "react";
-import { Text, View, StyleSheet, TouchableOpacity } from "react-native"
+import { Text, StyleSheet, TouchableOpacity } from "react-native"
 
 
 /**

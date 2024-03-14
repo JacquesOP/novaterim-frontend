@@ -53,7 +53,7 @@ export default function LoginScreen({ navigation }) {
 			password: password,
 		});
 
-		fetch("https://novaterim-backend-dufzz2qhr-jacquesop1s-projects.vercel.app/users/signin", {
+		fetch("https://novaterim-backend-kappa.vercel.app/users/signin", {
 			method: "POST",
          headers: { "Content-Type": "application/json" },
          body: userData,

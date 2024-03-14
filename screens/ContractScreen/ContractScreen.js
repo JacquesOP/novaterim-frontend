@@ -140,7 +140,7 @@ const ContractsPage = ({ navigation }) => {
   console.log(contracts)
   useEffect(() => {
     if (token) {
-        const url = `https://novaterim-backend-dufzz2qhr-jacquesop1s-projects.vercel.app/contracts/${token}`;
+        const url = `https://novaterim-backend-kappa.vercel.app/contracts/${token}`;
         fetch(url)
             .then(response => response.json())
             .then(data => {

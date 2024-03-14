@@ -109,7 +109,7 @@ export default function Identity({ navigation }) {
 
   useEffect(() => {
     if (token) {
-      const url = `https://novaterim-backend-dufzz2qhr-jacquesop1s-projects.vercel.app/users/${token}`
+      const url = `https://novaterim-backend-kappa.vercel.app/users/${token}`
       fetch(url)
         .then((response) => response.json())
         .then((data) => {
