@@ -55,7 +55,7 @@ export default function Address({ navigation }) {
   
   useEffect(() => {
     if (token) {
-        const url = `http://192.168.1.178:3000/users/${token}`;
+        const url = `https://novaterim-backend-dufzz2qhr-jacquesop1s-projects.vercel.app/users/${token}`;
         fetch(url)
         .then((response) => response.json())
         .then((data) => {

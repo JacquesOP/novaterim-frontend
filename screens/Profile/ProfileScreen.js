@@ -64,7 +64,7 @@ export default function ProfileScreen({ navigation }) {
       ======= Fetching file selecting to the Backend =======
       */
 
-         const response = await fetch(`http://192.168.1.25:3000/users/update/profile-img/${user.token}`, {
+         const response = await fetch(`https://novaterim-backend-dufzz2qhr-jacquesop1s-projects.vercel.app/users/update/profile-img/${user.token}`, {
             method: 'POST',
             body: formData,
             headers: {

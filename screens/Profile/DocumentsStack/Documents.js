@@ -43,7 +43,7 @@ export default function Documents({ navigation }) {
    const token = useSelector(state => state.user.value.token);
    useEffect(() => {
       if(token){
-         const url = `http://192.168.1.25:3000/users/${token}`
+         const url = `https://novaterim-backend.vercel.app/users/${token}`
          
          fetch(url)
             .then(response => response.json())
@@ -97,7 +97,7 @@ export default function Documents({ navigation }) {
       ======= Fetching file selecting to the Backend =======
       */
 
-         const response = await fetch(`http://192.168.1.25:3000/upload/${user.token}/identityCard`, {
+         const response = await fetch(`https://novaterim-backend.vercel.app/upload/${user.token}/identityCard`, {
             method: 'POST',
             body: formData,
             headers: {
@@ -161,7 +161,7 @@ export default function Documents({ navigation }) {
       ======= Fetching file selecting to the Backend =======
       */
 
-         const response = await fetch(`http://192.168.1.178:3000/upload/${user.token}/vitalCard`, {
+         const response = await fetch(`https://novaterim-backend.vercel.app/upload/${user.token}/vitalCard`, {
             method: 'POST',
             body: formData,
             headers: {
@@ -224,7 +224,7 @@ export default function Documents({ navigation }) {
       ======= Fetching file selecting to the Backend =======
       */
 
-         const response = await fetch(`http://192.168.1.178:3000/upload/${user.token}/resume`, {
+         const response = await fetch(`https://novaterim-backend.vercel.app/upload/${user.token}/resume`, {
             method: 'POST',
             body: formData,
             headers: {
@@ -288,7 +288,7 @@ export default function Documents({ navigation }) {
       ======= Fetching file selecting to the Backend =======
       */
 
-         const response = await fetch(`http://192.168.1.178:3000/upload/${user.token}/iban`, {
+         const response = await fetch(`https://novaterim-backend.vercel.app/upload/${user.token}/iban`, {
             method: 'POST',
             body: formData,
             headers: {
@@ -350,7 +350,7 @@ export default function Documents({ navigation }) {
       ======= Fetching file selecting to the Backend =======
       */
 
-         const response = await fetch(`http://192.168.1.178:3000/upload/${user.token}/homePaper`, {
+         const response = await fetch(`https://novaterim-backend-dufzz2qhr-jacquesop1s-projects.vercel.app/upload/${user.token}/homePaper`, {
             method: 'POST',
             body: formData,
             headers: {
