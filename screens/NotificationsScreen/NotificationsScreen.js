@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import {
   View,
   Text,
@@ -6,7 +6,6 @@ import {
   TouchableOpacity,
   ScrollView,
 } from "react-native"
-import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 
 const NotificationsScreen = ({ navigation }) => {
@@ -32,8 +31,8 @@ const NotificationsScreen = ({ navigation }) => {
         .catch((error) => {
           console.error("Error fetching contracts:", error)
         })
-    } else {
     }
+    
   }, [token])
 
   return (

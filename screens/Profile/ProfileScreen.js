@@ -2,7 +2,6 @@
 ============ Import react, react native & expo modules ============ 
 */
 import { StyleSheet, Text, View, Image, TouchableOpacity, StatusBar } from "react-native";
-import React, { useEffect, useState } from 'react';
 /*
 ============ Import modules ============ 
 */
@@ -16,7 +15,6 @@ import { logOut, addProfileIMG, updateToken } from "../../reducers/user";
 /*
 ============ Import Components ============ 
 */
-import LogoutButton from "../../components/LogoutButton";
 import Button from "../../components/Button";
 import MainButton from "../../components/MainButton";
 

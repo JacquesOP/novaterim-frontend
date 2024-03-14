@@ -8,7 +8,6 @@ import {
    KeyboardAvoidingView,
    TouchableOpacity,
    Image,
-   Platform,
    Keyboard, TouchableWithoutFeedback
 } from "react-native";
 import { useState, useEffect } from "react";
@@ -34,7 +33,6 @@ export default function LoginScreen({ navigation }) {
    const [ email, setEmail ] = useState("");
 	const [ password, setPassword ] = useState("");
    const [ loginStatus, setLoginStatus ] = useState("");
-   const [ loginPending, setLoginPending ] = useState(false);
 
    useEffect(() => {
       setTimeout(() => {

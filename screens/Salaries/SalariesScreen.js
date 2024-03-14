@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import {
   SafeAreaView,
   View,
@@ -7,16 +7,14 @@ import {
   TouchableOpacity,
   FlatList,
   Modal,
-  ScrollView,
 } from "react-native"
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome"
 
 import { faWallet } from "@fortawesome/free-solid-svg-icons"
-import { useState,useEffect } from "react"
-import * as FileSystem from "expo-file-system"
-import { shareAsync } from "expo-sharing"
+
+import * as FileSystem from "expo-file-system";
 import * as WebBrowser from 'expo-web-browser';
-import { useSelector } from "react-redux"
+import { useSelector } from "react-redux";
 
 
 
@@ -110,20 +108,12 @@ function SalariesScreen() {
         FileSystem.documentDirectory + fileName
       );
       console.log('Finished downloading to ', uri);
-      // saveFile(uri);
     } catch (e) {
       console.error('Error downloading the file: ', e);
     }
   };
 
-  // const saveFile = async (fileUri) => {
-  //   try {
-  //     await shareAsync(fileUri);
-  //     // Additional success handling
-  //   } catch (error) {
-  //     console.error('Error sharing the file: ', error);
-  //   }
-  // };
+
   return (
     <SafeAreaView style={styles.container}>
     
