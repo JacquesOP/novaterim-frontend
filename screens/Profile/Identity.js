@@ -109,7 +109,7 @@ export default function Identity({ navigation }) {
 
   useEffect(() => {
     if (token) {
-      const url = `https://novaterim-backend-kappa.vercel.app/users/${token}`
+      const url = `https://novaterim-backend-iota.vercel.app/users/${token}`
       fetch(url)
         .then((response) => response.json())
         .then((data) => {
@@ -151,7 +151,7 @@ export default function Identity({ navigation }) {
       }
 
       const response = await fetch(
-        `http://192.168.1.178:3000/users/update/${token}`,
+        `https://novaterim-backend-iota.vercel.app/users/update/${token}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },

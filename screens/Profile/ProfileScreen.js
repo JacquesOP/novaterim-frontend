@@ -64,7 +64,7 @@ export default function ProfileScreen({ navigation }) {
       ======= Fetching file selecting to the Backend =======
       */
 
-         const response = await fetch(`https://novaterim-backend-kappa.vercel.app/users/update/profile-img/${user.token}`, {
+         const response = await fetch(`https://novaterim-backend-iota.vercel.app/users/update/profile-img/${user.token}`, {
             method: 'POST',
             body: formData,
             headers: {

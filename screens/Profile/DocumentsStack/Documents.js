@@ -42,7 +42,7 @@ export default function Documents({ navigation }) {
    const token = useSelector(state => state.user.value.token);
    useEffect(() => {
       if(token){
-         const url = `https://novaterim-backend-kappa.vercel.app/users/${token}`
+         const url = `https://novaterim-backend-iota.vercel.app/users/${token}`
          
          fetch(url)
             .then(response => response.json())
@@ -96,7 +96,7 @@ export default function Documents({ navigation }) {
       ======= Fetching file selecting to the Backend =======
       */
 
-         const response = await fetch(`https://novaterim-backend-kappa.vercel.app/upload/${user.token}/identityCard`, {
+         const response = await fetch(`https://novaterim-backend-iota.vercel.app/upload/${user.token}/identityCard`, {
             method: 'POST',
             body: formData,
             headers: {
@@ -160,7 +160,7 @@ export default function Documents({ navigation }) {
       ======= Fetching file selecting to the Backend =======
       */
 
-         const response = await fetch(`https://novaterim-backend-kappa.vercel.app/upload/${user.token}/vitalCard`, {
+         const response = await fetch(`https://novaterim-backend-iota.vercel.app/upload/${user.token}/vitalCard`, {
             method: 'POST',
             body: formData,
             headers: {
@@ -223,7 +223,7 @@ export default function Documents({ navigation }) {
       ======= Fetching file selecting to the Backend =======
       */
 
-         const response = await fetch(`https://novaterim-backend-kappa.vercel.app/upload/${user.token}/resume`, {
+         const response = await fetch(`https://novaterim-backend-iota.vercel.app/upload/${user.token}/resume`, {
             method: 'POST',
             body: formData,
             headers: {
@@ -287,7 +287,7 @@ export default function Documents({ navigation }) {
       ======= Fetching file selecting to the Backend =======
       */
 
-         const response = await fetch(`https://novaterim-backend-kappa.vercel.app/upload/${user.token}/iban`, {
+         const response = await fetch(`https://novaterim-backend-iota.vercel.app/upload/${user.token}/iban`, {
             method: 'POST',
             body: formData,
             headers: {
@@ -349,7 +349,7 @@ export default function Documents({ navigation }) {
       ======= Fetching file selecting to the Backend =======
       */
 
-         const response = await fetch(`https://novaterim-backend-kappa.vercel.app/upload/${user.token}/homePaper`, {
+         const response = await fetch(`https://novaterim-backend-iota.vercel.app/upload/${user.token}/homePaper`, {
             method: 'POST',
             body: formData,
             headers: {
